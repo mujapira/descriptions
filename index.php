@@ -17,75 +17,59 @@ require_once './inc/functions/functions.php';
 
     <link href="index.css" rel="stylesheet">
 
-    <link href="./js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
-    <link href="./js/slick-1.8.1/slick/slick.css" rel="stylesheet">
-
-
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
 </head>
 
 <body>
-    <img id="light-01" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0004s_0003_luz_01.png">
+
+
+    <img id="light-01" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0002_luz_02.png">
     <img id="light-02" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0002_luz_02.png">
     <img id="light-03" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0000____.png">
 
-
     <section id="line-01">
-        <div class="container">
-            <div class="shoe-option">
-                <div class="shoe">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
                     <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
                 </div>
-                <div class="shoe">
+                <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
                     <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
                 </div>
-                <div class="shoe">
+                <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
                     <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
                 </div>
             </div>
-            <div class="shoe-option-nav">
-                <div>
-                    <img class="shoe-option-bar active" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0001s_0000_Rectangle-3-copy-2.png">
-                </div>
-                <div>
-                    <img class="shoe-option-bar" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0001s_0000_Rectangle-3-copy-2.png">
-                </div>
-                <div>
-                    <img class="shoe-option-bar" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0001s_0000_Rectangle-3-copy-2.png">
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
+
     </section>
 
     <section id="line-02">
-
         <div class="container-01">
-
-            <div class="carrousel">
-                <div class="carrousel-item">
-                    <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2Main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
+                    </div>
                 </div>
-                <div class="carrousel-item">
-                    <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
-                </div>
-                <div class="carrousel-item">
-                    <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
-                </div>
-                <div class="carrousel-item">
-                    <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="carrousel-info">
+            <div thumbsSlider="" class="swiper mySwiper2Thumb">
                 <div class="text">
                     <img class="bar" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0001s_0000s_0000_traço.png" alt="">
                     <p>Se você está procurando um Tênis que cai
@@ -94,23 +78,22 @@ require_once './inc/functions/functions.php';
                         <b> Tênis Extreme Blade é o seu par perfeito.</b>
                     </p>
                 </div>
-                <div class="mini-carrousel">
-                    <div class="mini-item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
                     </div>
-                    <div>
+                    <div class="swiper-slide">
                         <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
                     </div>
-                    <div>
+                    <div class="swiper-slide">
                         <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
                     </div>
-                    <div>
+                    <div class="swiper-slide">
                         <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="container-02">
             <img class="bar" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0001s_0000s_0000_traço.png">
             <p>Com um acabamento
@@ -121,25 +104,24 @@ require_once './inc/functions/functions.php';
                 se encaixa no seu.
             </p>
         </div>
-        <section id="especial">
-            <div class="wrap">
-                <div class="slider">
-                    <div class="item">
-                        <img src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0001s_0002s_0000_foto_01.png" alt="">
+        <div class="container-03">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
                     </div>
-                    <div class="item">
-                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0001s_0001s_0003s_0002_01.png" alt="">
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
                     </div>
-                    <div class="item">
-                        <img src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0001s_0002s_0000_foto_01.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png" alt="">
+                    <div class="swiper-slide">
+                        <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0005_foto_06.png">
                     </div>
 
                 </div>
             </div>
-        </section>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
     <section id="line-03">
@@ -157,146 +139,62 @@ require_once './inc/functions/functions.php';
         </div>
     </section>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
         $(document).ready(function() {
 
-            $('#line-01 .shoe-option').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: false,
-                adaptiveHeight: false,
-                infinite: false,
-                useTransform: true,
-
-                asNavFor: '.shoe-option-nav',
+            var swiper = new Swiper("#line-01 .mySwiper1", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function(index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                    },
+                },
             });
 
-            $('#line-01 .shoe-option-nav').on('init', function(event, slick) {
-                $('#line-01 .shoe-option-nav .slick-slide.slick-current').addClass('is-active');
-            }).slick({
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                dots: false,
-                focusOnSelect: false,
-                arrows: false,
-                infinite: false,
-                asNavFor: '.shoe-option',
-
-                dots: false,
-                arrows: false,
+            var swiper = new Swiper(".mySwiper2Thumb", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
             });
 
-            $('#line-01 .shoe-option').on('afterChange', function(event, slick, currentSlideLine1) {
-                $('#line-01 .shoe-option-nav').slick('slickGoTo', currentSlideLine1);
-                var currrentNavSlideElemLine1 = '#line-01 .shoe-option-nav .slick-slide[data-slick-index="' + currentSlideLine1 + '"]';
-                var currrentNavSlideElemImgLine1 = ' #line-01 .shoe-option-nav .slick-slide[data-slick-index="' + currentSlideLine1 + '"] .shoe-option-bar'
-                $('#line-01 .shoe-option-nav .slick-slide.is-active').removeClass('is-active');
-                $('#line-01 .shoe-option-nav .slick-slide .shoe-option-bar.active').removeClass('active');
-
-                $(currrentNavSlideElemLine1).addClass('is-active');
-                $(currrentNavSlideElemImgLine1).addClass('active');
+            var swiper = new Swiper(".mySwiper2Main", {
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
             });
 
-            $('#line-01 .shoe-option-nav').on('click', '.slick-slide', function(event) {
-                event.preventDefault();
-                var goToSingleSlideLine1 = $(this).data('slick-index');
-
-                $('#line-01 .shoe-option').slick('slickGoTo', goToSingleSlideLine1);
+            var swiper = new Swiper(".mySwiper3", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                loop: true,
+                loopedSlides: 0,
+                /*  initialSlide:1, */
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 70,
+                    modifier: 1,
+                    scale: 0.8,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
-
-            /**********************************************************************************************************/
-
-            $('#line-02 .carrousel').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                fade: false,
-                infinite: false,
-
-                arrows: true,
-                asNavFor: '.mini-carrousel',
-
-                prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"></button>',
-            })
-
-            $('#line-02 .mini-carrousel').on('init', function(event, slick) {
-                $('#line-02 .mini-carrousel .slick-slide.slick-current').addClass('is-active');
-            }).slick({
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                dots: false,
-                focusOnSelect: false,
-                arrows: false,
-                infinite: false,
-                asNavFor: '.carrousel',
-                dots: false,
-                arrows: false,
-                responsive: [{
-                    breakpoint: 400,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                    }
-                }],
-            });
-
-            $('#line-02 .carrousel').on('afterChange', function(event, slick, currentSlide) {
-                $('#line-02 .mini-carrousel').slick('slickGoTo', currentSlide);
-                var currrentNavSlideElem = '#line-02 .mini-carrousel .slick-slide[data-slick-index="' + currentSlide + '"]';
-                $('#line-02 .mini-carrousel .slick-slide.is-active').removeClass('is-active');
-                $(currrentNavSlideElem).addClass('is-active');
-            });
-
-            $('#line-02 .mini-carrousel').on('click', '.slick-slide', function(event) {
-                event.preventDefault();
-                var goToSingleSlide = $(this).data('slick-index');
-
-                $('#line-02 .carrousel').slick('slickGoTo', goToSingleSlide
-
-                );
-            });
-
-            /**********************************************************************************************************/
-            let slider = $('.slider');
-
-            slider.slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: true,
-                dots: false,
-                centerMode: true,
-                variableWidth: true,
-                infinite: true,
-                focusOnSelect: true,
-                touchMove: true,
-                slickGoTo: true,
-
-
-                cssEase: 'ease',
-                easing: 'linear',
-
-                prevArrow: '<button class="slide-arrow prev-arrow triple-slide"></button>',
-                nextArrow: '<button class="slide-arrow next-arrow triple-slide"></button>',
-            });
-
-
-            var imgs = $('.slider img');
-            imgs.each(function() {
-                var item = $(this).closest('.item');
-                item.css({
-                    'background-image': 'url(' + $(this).attr('src') + ')',
-                    'background-position': 'center',
-                    '-webkit-background-size': 'cover',
-                    'background-size': 'cover',
-                });
-                $(this).hide();
-            });
-
-
-        });
+        })
     </script>
 
 </body>
