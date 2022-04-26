@@ -246,7 +246,7 @@ button {
 #line-02 .swiper-pagination-bullets.swiper-pagination-horizontal {
     width: 100%;
     top: 0%;
-    left: 0%;
+    left: -16%;
 }
 #line-02 .swiper-pagination-bullet-active {
     color: #00d5ea;
@@ -257,6 +257,8 @@ button {
     width: 30%;
     display: flex;
     flex-direction: column;
+
+    position: relative;
 }
 
 #line-02 .mySwiper2Thumb {
@@ -265,6 +267,9 @@ button {
 
     display: flex;
     flex-direction: column;
+
+    position: absolute;
+    top: 180px;
 }
 
 #line-02 .mySwiper2Thumb2 {
@@ -324,10 +329,12 @@ button {
     }
     #line-02 .wrapper {
         width: 50%;
+        position: unset;
     }
 
     #line-02 .mySwiper2Thumb {
         width: 100%;
+        position: unset;
     }
 
     #line-02 .swiper-pagination-bullets.swiper-pagination-horizontal {
