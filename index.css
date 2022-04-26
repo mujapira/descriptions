@@ -8,7 +8,7 @@ body {
     position: relative;
 
     font-family: "Raleway", sans-serif;
-
+    box-sizing: border-box;
 }
 
 button {
@@ -21,7 +21,6 @@ button {
 
     appearance: none;
 }
-
 
 #light-01 {
     position: absolute;
@@ -144,15 +143,17 @@ button {
         display: -webkit-flex;
         display: flex;
         flex-direction: column;
+
+        padding-top: 30px;
     }
 
     #line-01 .left {
         max-height: 200px;
-        max-width: 90%;
+        max-width: 95%;
     }
 
     #line-01 .right {
-        max-width: 90%;
+        max-width: 95%;
         min-width: 200px;
     }
 
@@ -282,11 +283,11 @@ button {
 
 @media screen and (max-width: 700px) {
     #line-02 .mySwiper2Main {
-        max-width: 80%;
+        max-width: 95%;
         border-radius: 10px;
     }
     #line-02 .mySwiper2Thumb {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -314,8 +315,9 @@ button {
         color: white;
         font-size: 18px;
         width: 90%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+        margin-top: 60px;
+        margin-bottom: 0px;
     }
 }
 
@@ -421,6 +423,21 @@ button {
         top: -60px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    #line-03 .wrapper-line-1 .strap {
+        width: 40%;
+        top: -60px;
+        left: 5px;
+    }
+
+    #line-03 .wrapper-line-1 .title {
+        font-size: 20px;
+        top: -60px;
+        left: 5px;
+    }
+}
+
 
 #light-03 {
     position: absolute;

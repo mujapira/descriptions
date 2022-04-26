@@ -37,7 +37,7 @@ require_once './inc/functions/functions.php';
                 </div>
                 <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
-                    <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
+                    <img class="right" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0000s_0000s_0000_tenis_preto.png">
                 </div>
                 <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
