@@ -194,6 +194,8 @@ button {
     height: 500px;
     width: 100%;
 
+    position: relative;
+
     z-index: 30;
     -webkit-box-shadow: 1px 0px 20px 10px rgba(0, 0, 0, 0.81);
     box-shadow: 1px 0px 20px 10px rgba(0, 0, 0, 0.81);
@@ -216,19 +218,63 @@ button {
     height: 400px;
 
     border-radius: 10px;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+#line-02 .swiper-pagination-2 {
+    width: 200px;
+    position: absolute;
+    display: flex;
+}
+
+#line-02 .swiper-pagination-bullet {
+    width: 60px;
+    height: 8px;
+
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1px;
+    line-height: 1px;
+
+    color: #8a8a8a;
+    opacity: 1;
+    background: #8a8a8a;
+
+    z-index: 10;
+}
+#line-02 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+#line-02 .swiper-pagination-bullet-active {
+    color: #00d5ea;
+    background: #00d5ea;
+}
+
+#line-02 .wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 #line-02 .mySwiper2Thumb {
-    width: 30%;
+    width: 100%;
     box-sizing: border-box;
-    /*  padding: 10px 0; */
 
     display: flex;
     flex-direction: column;
 }
 
+#line-02 .mySwiper2Thumb2 {
+    width: 100%;
+    padding-top: 33px;
+}
+
 #line-02 .mySwiper2Thumb .swiper-slide {
     width: 25%;
+    opacity: 0.6;
 }
 
 #line-02 .mySwiper2Thumb .swiper-slide-thumb-active {
@@ -276,8 +322,18 @@ button {
 
         border-radius: 10px;
     }
-    #line-02 .mySwiper2Thumb {
+    #line-02 .wrapper {
         width: 50%;
+    }
+
+    #line-02 .mySwiper2Thumb {
+        width: 100%;
+    }
+
+    #line-02 .swiper-pagination-bullets.swiper-pagination-horizontal {
+        width: 100%;
+        top: 0%;
+        left: 0%;
     }
 }
 
@@ -286,9 +342,9 @@ button {
         max-width: 95%;
         border-radius: 10px;
     }
-    #line-02 .mySwiper2Thumb {
-        width: 95%;
-    }
+    #line-02 .wrapper {
+        width: 90%;
+      }
 }
 
 #line-02 .container-02 {
@@ -300,7 +356,6 @@ button {
     font-size: 22px;
     width: 90%;
     margin-top: 130px;
-    margin-bottom: 130px;
 }
 
 #line-02 .container-02 p {
@@ -437,7 +492,6 @@ button {
         left: 5px;
     }
 }
-
 
 #light-03 {
     position: absolute;
