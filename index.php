@@ -26,7 +26,6 @@ require_once './inc/functions/functions.php';
 
     <img id="light-01" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0002_luz_02.png">
     <img id="light-02" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0002_luz_02.png">
-    <img id="light-03" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0000____.png">
 
     <section id="line-01">
         <div class="swiper mySwiper1">
@@ -156,6 +155,7 @@ require_once './inc/functions/functions.php';
 
     <section id="line-03">
         <div class="wrapper-line-1">
+            <img id="light-03" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0002s_0000____.png">
             <img class="strap" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0000s_0000s_0001_faixa_05.png" alt="">
             <span class="title">A PROPOSTA <br> DO TÊNIS EXTREME <br> BLADE É:</span>
             <img class="shoe" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0002s_0001s_0000_tenis_branco.png" alt="">

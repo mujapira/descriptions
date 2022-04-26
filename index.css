@@ -351,7 +351,7 @@ button {
     }
     #line-02 .wrapper {
         width: 90%;
-      }
+    }
 }
 
 #line-02 .container-02 {
@@ -502,14 +502,16 @@ button {
 
 #light-03 {
     position: absolute;
-    bottom: 21%;
+    top: 0;
     z-index: 10;
-    right: 3%;
+    right: 2%;
     width: 22%;
+    z-index: 10;
 }
 
 #line-03 .wrapper-line-1 .shoe {
     width: 90%;
+    z-index: 20;
 }
 
 #line-03 .footer {
