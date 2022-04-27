@@ -164,9 +164,9 @@ require_once './inc/functions/functions.php';
                     </div>
 
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
 
     </section>
@@ -246,11 +246,11 @@ require_once './inc/functions/functions.php';
                 grabCursor: true,
                 watchSlidesProgress: true,
                 loop: true,
-               
+
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
-    
+
                 },
             });
 
@@ -261,7 +261,7 @@ require_once './inc/functions/functions.php';
                 slidesPerView: "auto",
                 loop: true,
                 loopedSlides: 0,
-               
+
                 /*  initialSlide:1, */
                 coverflowEffect: {
                     rotate: 0,
