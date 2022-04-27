@@ -32,11 +32,11 @@ require_once './inc/functions/functions.php';
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
-                    <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
+                    <img class="right" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0000s_0000s_0000_tenis_preto.png">
                 </div>
                 <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
-                    <img class="right" src="./assets/_opcao02/lp_tenis_extreme_blade_1280px-02_0000s_0000s_0000_tenis_preto.png">
+                    <img class="right" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0000_tenis_branco.png">
                 </div>
                 <div class="swiper-slide">
                     <img class="left" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0000s_0000s_0003_TÊNIS-EXTREME--BLADE.png">
@@ -50,7 +50,7 @@ require_once './inc/functions/functions.php';
 
     <section id="line-02">
         <div class="container-01">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2Main">
+            <div class="swiper mySwiper2Main">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./assets/_opcao03/lp_tenis_extreme_blade_1280px-03_0002s_0001s_0000_foto_01.png">
@@ -119,19 +119,36 @@ require_once './inc/functions/functions.php';
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
+
+
         <div class="container-02">
-            <img class="bar" src="./assets/_opcao01/lp_tenis_extreme_blade_1280px-01_0001s_0000s_0000_traço.png">
-            <p>Com um acabamento
-                de alta qualidade, design
-                arrojado e moderno,
-                <b>não importa qual o seu
-                    estilo,</b> pois o <b>Extreme Blade</b>
-                se encaixa no seu.
-            </p>
+            <div class="swiper mySwiper3Text">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>Se você está procurando um Tênis que cai
+                            perfeito no seu dia a dia e é excelente para
+                            ter um bom desempenho na academia, o
+                            <b> Tênis Extreme Blade é o seu par perfeito.</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p> Com um acabamento de alta qualidade,
+                            design arrojado e moderno, não importa qual o seu estilo,
+                            pois o<b> Extreme Blade se encaixa no seu.</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Se você está procurando um Tênis que cai
+                            perfeito no seu dia a dia e é excelente para
+                            ter um bom desempenho na academia, o
+                            <b> Tênis Extreme Blade é o seu par perfeito.</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
         <div class="container-03">
             <div class="swiper mySwiper3">
@@ -151,6 +168,7 @@ require_once './inc/functions/functions.php';
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+
     </section>
 
     <section id="line-03">
@@ -188,7 +206,7 @@ require_once './inc/functions/functions.php';
 
             var swiperText = new Swiper(".mySwiper2Thumb2", {
                 slidesPerView: 1,
-                freeMode: true,
+
                 watchSlidesProgress: true,
                 loop: true,
                 pagination: {
@@ -203,7 +221,7 @@ require_once './inc/functions/functions.php';
             var swiperThumb = new Swiper(".mySwiper2Thumb", {
                 spaceBetween: 10,
                 slidesPerView: 4,
-                freeMode: true,
+
                 watchSlidesProgress: true,
             });
 
@@ -221,6 +239,20 @@ require_once './inc/functions/functions.php';
             });
 
             swiperMain.controller.control = swiperText;
+            swiperText.controller.control = swiperMain;
+
+            var swiperText2 = new Swiper(".mySwiper3Text", {
+                slidesPerView: "auto",
+                grabCursor: true,
+                watchSlidesProgress: true,
+                loop: true,
+               
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+    
+                },
+            });
 
             var swiper3 = new Swiper(".mySwiper3", {
                 effect: "coverflow",
@@ -229,6 +261,7 @@ require_once './inc/functions/functions.php';
                 slidesPerView: "auto",
                 loop: true,
                 loopedSlides: 0,
+               
                 /*  initialSlide:1, */
                 coverflowEffect: {
                     rotate: 0,
@@ -242,6 +275,10 @@ require_once './inc/functions/functions.php';
                     prevEl: ".swiper-button-prev",
                 },
             });
+            swiper3.controller.control = swiperText2;
+            swiperText2.controller.control = swiper3;
+
+
         })
     </script>
 

@@ -222,13 +222,7 @@ button {
     margin-right: unset;
 }
 
-#line-02 .swiper-pagination-2 {
-    width: 200px;
-    position: absolute;
-    display: flex;
-}
-
-#line-02 .swiper-pagination-bullet {
+#line-02 .container-01 .swiper-pagination-bullet {
     width: 60px;
     height: 8px;
 
@@ -243,12 +237,12 @@ button {
 
     z-index: 10;
 }
-#line-02 .swiper-pagination-bullets.swiper-pagination-horizontal {
+#line-02 .container-01 .swiper-pagination-bullets.swiper-pagination-horizontal {
     width: 100%;
     top: 0%;
     left: -16%;
 }
-#line-02 .swiper-pagination-bullet-active {
+#line-02 .container-01 .swiper-pagination-bullet-active {
     color: #00d5ea;
     background: #00d5ea;
 }
@@ -364,6 +358,9 @@ button {
     width: 90%;
     margin-top: 130px;
 }
+#line-02 .mySwiper3Text {
+    width: 300px;
+}
 
 #line-02 .container-02 p {
     max-width: 300px;
@@ -381,6 +378,31 @@ button {
         margin-top: 60px;
         margin-bottom: 0px;
     }
+}
+
+#line-02 .mySwiper3Text .swiper-pagination-bullet {
+    width: 60px;
+    height: 8px;
+
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1px;
+    line-height: 1px;
+
+    color: #8a8a8a;
+    opacity: 1;
+    background: #8a8a8a;
+
+    z-index: 10;
+}
+#line-02 .mySwiper3Text .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 100%;
+    top: -4%;
+    left: -17%;
+}
+#line-02 .mySwiper3Text .swiper-pagination-bullet-active {
+    color: #00d5ea;
+    background: #00d5ea;
 }
 
 #line-02 .container-03 {
