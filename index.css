@@ -372,7 +372,7 @@ body {
     border-radius: 50%;
     background: var(--secundary);
     cursor: pointer;
-    border: 5px white !important;
+    border: 5px solid white !important;
 }
 .range input::-moz-range-thumb {
     width: 70px;
@@ -381,7 +381,7 @@ body {
     border-radius: 50%;
     background: var(--secundary);
     cursor: pointer;
-    border: 5px white !important;
+    border: 5px solid white !important;
 }
 .range input::-ms-thumb {
     width: 70px;
@@ -390,7 +390,7 @@ body {
     border-radius: 50%;
     background: var(--white);
     cursor: pointer;
-    border: 5px white !important;
+    border: 5px solid white !important;
 }
 
 .range input::-webkit-slider-runnable-track {
@@ -1255,7 +1255,7 @@ body {
             top: -5px; /* moz */
         }
     }
-    
+
     .range input::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 30px;
@@ -1264,7 +1264,9 @@ body {
         border-radius: 50%;
         background: var(--secundary);
         cursor: pointer;
-        border: 5px white !important;
+
+        box-sizing: border-box;
+        border: 10px solid white !important;
     }
     .range input::-moz-range-thumb {
         width: 30px;
@@ -1273,7 +1275,9 @@ body {
         border-radius: 50%;
         background: var(--secundary);
         cursor: pointer;
-        border: 5px white !important;
+
+        box-sizing: border-box;
+        border: 10px solid white !important;
     }
     .range input::-ms-thumb {
         width: 30px;
@@ -1282,7 +1286,9 @@ body {
         border-radius: 50%;
         background: var(--white);
         cursor: pointer;
-        border: 5px white !important;
+
+        box-sizing: border-box;
+        border: 10px solid white !important;
     }
     #line-02 .container-02 {
         display: flex;
