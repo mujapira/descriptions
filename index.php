@@ -140,13 +140,13 @@ require_once './inc/functions/functions.php';
                 </div>
             </div>
             <div class="slider shoe">
-                <div class="sync-thumb"> <img src="assets/brownshoe.png"></div>
+                <div class="sync-thumb"> <img src="assets/blackshoe.png"></div>
                 <div class="sync-thumb"> <img src="assets/whiteshoe.png"></div>
                 <div class="sync-thumb"> <img src="assets/brownshoe.png"></div>
                 <div class="sync-thumb"> <img src="assets/whiteshoe.png"></div>
             </div>
             <ul class="option slider-nav">
-                <li class="sync black "></li>
+                <li class="sync black selected"></li>
                 <li class="sync white "></li>
                 <li class="sync brown "></li>
                 <li class="sync green "></li>
@@ -167,7 +167,7 @@ require_once './inc/functions/functions.php';
                 <li><img src="assets/shape.png"><span>Não importa qual o seu estilo, pois o X Blade se encaixa no seu</span></li>
             </ul>
             <div class="slider slider-nav">
-                <div class="sync-minithumb brown"> <img src="assets/mini3.png"></div>
+                <div class="sync-minithumb brown selected"> <img src="assets/mini3.png"></div>
                 <div class="sync-minithumb green"> <img src="assets/mini4.png"></div>
                 <div class="sync-minithumb white"> <img src="assets/mini2.png"></div>
                 <div class="sync-minithumb black"><img src="assets/mini1.png"></div>
@@ -220,6 +220,11 @@ require_once './inc/functions/functions.php';
         })
     </script>
     <script type="text/javascript">
+
+
+
+
+
         var sheet = document.createElement('style'),
             $rangeInput = $('.range input'),
             prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
