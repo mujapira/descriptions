@@ -502,7 +502,6 @@ body {
 
 #line-06 .container-01 .shoe {
     width: 100%;
-  
 }
 #line-06 .container-01 .shoe img {
     width: 90%;
@@ -542,6 +541,7 @@ body {
     justify-content: center;
     height: 100%;
     gap: 50px;
+    padding-bottom: 50px;
 }
 
 #line-06 .container-02 .title {
@@ -957,7 +957,7 @@ body {
         justify-content: center;
         align-items: center;
         max-width: 1920px;
-        height: 2000px;
+        height: 100%;
         background-color: rgb(221, 221, 221);
     }
 
@@ -967,7 +967,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 60%;
+        height: auto;
     }
     #line-06 .container-01 .title,
     #line-06 .container-01 .wrapper {
@@ -1038,6 +1038,15 @@ body {
     #line-06 .container-01 .option .green {
         background-color: var(--primary);
     }
+
+    #line-06 .shoe .sync-thumb {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1005px;
+    }
+
     #line-06 .container-02 .description {
         width: 100%;
         padding: 0;
@@ -1076,6 +1085,16 @@ body {
         height: 140px;
     }
 }
+@media (max-width: 1024px) {
+    #line-06 .shoe .sync-thumb {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+}
+
 @media (max-width: 768px) {
     #line-06 {
         display: flex;
@@ -1083,8 +1102,16 @@ body {
         justify-content: center;
         align-items: center;
         max-width: 1920px;
-        height: 1200px;
+        height: 100%;
         background-color: rgb(221, 221, 221);
+    }
+
+    #line-06 .shoe .sync-thumb {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
     }
 
     #line-06 .container-01 {
@@ -1209,9 +1236,18 @@ body {
         height: 70px;
     }
 }
+@media (max-width: 425px) {
+    #line-06 .shoe .sync-thumb {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+}
 @media (max-width: 350px) {
     #line-06 {
-        height: 1200px;
+        height: 100%;
     }
     #line-06 .container-01 .wrapper {
         margin-bottom: 50px;
@@ -1361,4 +1397,3 @@ body {
         pointer-events: none;
     }
 }
-
