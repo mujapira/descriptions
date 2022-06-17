@@ -8,11 +8,14 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, user-scalable=0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
                     </div>
                     <div class="wrapper">
                         <div class="range">
-                            <input type="range" min="1" max="7" steps="1" value="1">
+                            <input type="range" min="1" max="8" steps="1" value="1">
                             <div class="bar"></div>
                         </div>
                         <ul class="range-labels">
@@ -58,6 +61,7 @@
                             <li>40</li>
                             <li>41</li>
                             <li>42</li>
+                            <li>43</li>
                             <li>44</li>
                         </ul>
                     </div>
@@ -159,8 +163,10 @@
             <ul class="description">
                 <li><img src="assets/shape.png"><span>Impecabilidade ao praticar esportes ao ar livre</span></li>
                 <li><img src="assets/shape.png"><span>Reduz o impacto nas articulações no seu dia a dia</span></li>
-                <li><img src="assets/shape.png"><span>A cabamento de alta qualidade, design arrojado e moderno</span></li>
-                <li><img src="assets/shape.png"><span>Não importa qual o seu estilo, pois o X Blade se encaixa no seu</span></li>
+                <li><img src="assets/shape.png"><span>A cabamento de alta qualidade, design arrojado e moderno</span>
+                </li>
+                <li><img src="assets/shape.png"><span>Não importa qual o seu estilo, pois o X Blade se encaixa no
+                        seu</span></li>
             </ul>
             <div class="slider slider-nav">
                 <div class="sync-minithumb brown selected"> <img src="assets/mini3.png"></div>
@@ -174,7 +180,7 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.shoe').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -188,7 +194,7 @@
             });
 
             $('.slider-nav')
-                .on('init', function(event, slick) {
+                .on('init', function (event, slick) {
                     $('.slider-nav .slick-slide.slick-current').addClass('is-active');
                 })
                 .slick({
@@ -200,14 +206,14 @@
 
                 });
 
-            $('.shoe').on('afterChange', function(event, slick, currentSlide) {
+            $('.shoe').on('afterChange', function (event, slick, currentSlide) {
                 $('.slider-nav').slick('slickGoTo', currentSlide);
                 var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
                 $('.slider-nav .slick-slide.is-active').removeClass('is-active');
                 $(currrentNavSlideElem).addClass('is-active');
             });
 
-            $('.slider-nav').on('click', '.slick-slide', function(event) {
+            $('.slider-nav').on('click', '.slick-slide', function (event) {
                 event.preventDefault();
                 var goToSingleSlide = $(this).data('slick-index');
 
@@ -222,7 +228,7 @@
 
         document.body.appendChild(sheet);
 
-        var getTrackStyle = function(el) {
+        var getTrackStyle = function (el) {
             var curVal = el.value,
                 val = (curVal - 1) * 16.666666667,
                 style = '';
@@ -239,18 +245,23 @@
             return style;
         }
 
-        $rangeInput.on('input', function() {
+        $rangeInput.on('input', function () {
             sheet.textContent = getTrackStyle(this);
         });
 
         // Change input value on label click
-        $('.range-labels li').on('click', function() {
+        $('.range-labels li').on('click', function () {
             var index = $(this).index();
 
             $rangeInput.val(index + 1).trigger('input');
 
         });
     </script>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+    </style>
 </body>
 
 </html>
