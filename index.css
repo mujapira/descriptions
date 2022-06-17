@@ -592,7 +592,13 @@ body {
     line-height: 30px;
 }
 
-#line-06 .container-02 .slider-nav {
+#line-06 .container-02 .slider-nav .slick-slide.is-active img {
+    border: 5px solid #bbbbbb;
+    border-radius: 5px;
+}
+#line-06 .container-01 .slider-nav .slick-slide.is-active {
+    border: 5px solid #bbbbbb;
+ 
 }
 #line-06 .container-02 .slider-nav div {
     padding-left: 10px;
