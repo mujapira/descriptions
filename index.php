@@ -140,10 +140,10 @@ require_once './inc/functions/functions.php';
                 </div>
             </div>
             <div class="slider shoe">
-                <div class="sync-thumb"> <img src="assets/blackshoe.png"></div>
-                <div class="sync-thumb"> <img src="assets/whiteshoe.png"></div>
-                <div class="sync-thumb"> <img src="assets/brownshoe.png"></div>
-                <div class="sync-thumb"> <img src="assets/whiteshoe.png"></div>
+                <div class="sync-thumb"> <img src="assets/blackshoe-new.png"></div>
+                <div class="sync-thumb"> <img src="assets/whiteshoe-new.png"></div>
+                <div class="sync-thumb"> <img src="assets/brownshoe-new.png"></div>
+                <div class="sync-thumb"> <img src="assets/greenshoe.png"></div>
             </div>
             <ul class="option slider-nav">
                 <li class="sync black selected"></li>
