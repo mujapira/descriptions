@@ -1,7 +1,3 @@
-<?php
-require_once './inc/functions/functions.php';
-?>
-
 <!doctype html>
 <html lang="pt-br" class="">
 
