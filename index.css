@@ -1404,4 +1404,16 @@ body {
         border-radius: 20px;
         pointer-events: none;
     }
+    .range-labels .active.selected::after {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        left: 0;
+        content: "";
+        margin: 0 auto;
+        width: 15px;
+        height: 15px;
+        background: var(--white);
+        border-radius: 50%;
+    }
 }
