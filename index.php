@@ -220,11 +220,6 @@ require_once './inc/functions/functions.php';
         })
     </script>
     <script type="text/javascript">
-
-
-
-
-
         var sheet = document.createElement('style'),
             $rangeInput = $('.range input'),
             prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];

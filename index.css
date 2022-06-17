@@ -469,6 +469,10 @@ body {
 }
 
 #line-06 .shoe .sync-thumb {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* LINE 06 **************************************************/
@@ -498,6 +502,7 @@ body {
 
 #line-06 .container-01 .shoe {
     width: 100%;
+  
 }
 #line-06 .container-01 .shoe img {
     width: 90%;
