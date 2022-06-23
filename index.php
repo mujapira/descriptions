@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link href="/jaqueta/index.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <img class="halfwordtop" src="../jaqueta/assets/halfwordtop.png" alt="">
+            <img class="halfwordtop" src="assets/halfwordtop.png" alt="">
         </div>
     </section>
 
