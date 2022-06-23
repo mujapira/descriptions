@@ -959,7 +959,6 @@ body {
         align-items: center;
     }
 }
-
 @media (max-width: 768px) {
     #line-04 {
         flex-direction: column-reverse;
